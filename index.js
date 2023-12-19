@@ -25,7 +25,7 @@ const rates = {
 };
 
 const runGame = () => {
-  const userSelection = readline.question('Выберите, что будете кидать. (камень, ножницы, бумага) ==> ').toLowerCase();
+  const userSelection = readline.question('Выберите фигуру. (камень, ножницы, бумага) ==> ').toLowerCase();
   const randomSelection = _.sample(selections);
 
   const result = rates[userSelection][randomSelection];
